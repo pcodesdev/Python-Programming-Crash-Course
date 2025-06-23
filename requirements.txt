@@ -1,0 +1,26 @@
+# Requires Python 3.11 or higher
+
+# Basic Utilities
+python-dotenv>=1.0.0
+
+# Game Development (Alien Invasion - Chapters 12–14)
+pygame==2.5.2
+
+# Data Visualization (Chapters 15–17)
+matplotlib>=3.8.0
+plotly>=5.21.0
+pandas>=2.2.2
+requests>=2.32.2
+
+# Web Development with Django (Chapters 18–20)
+Django>=5.0.6
+
+# Development & Testing Tools (Chapter 11 and general)
+ipython>=8.24.0
+jupyterlab>=4.2.1
+pytest>=8.2.1
+black>=24.4.2
+flake8>=7.0.0
+
+# Optional: For API testing and debugging
+httpie>=3.2.2
