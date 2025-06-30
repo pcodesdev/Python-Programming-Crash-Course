@@ -95,3 +95,31 @@ del friends_dinner_invite[0]  # Remove Peter
 del friends_dinner_invite[0]  # Remove John
 # Printing the empty list
 print(friends_dinner_invite)
+
+places_to_visit = ["Paris", "Tokyo", "New York", "Sydney", "Cape Town"]
+
+print("Original order:")
+print(places_to_visit)  # ['Paris', 'Tokyo', 'New York', 'Sydney', 'Cape Town']
+print("\nAlphabetical order:")
+print(sorted(places_to_visit))  # ['Cape Town', 'New York', 'Paris', 'Sydney', 'Tokyo']
+print("\nOriginal order after sorted():")
+print(places_to_visit)  # ['Paris', 'Tokyo', 'New York', 'Sydney', 'Cape Town'] 
+print("\nReverse alphabetical order:")
+print(sorted(places_to_visit, reverse=True))  # ['Tokyo', 'Sydney', 'Paris', 'New York', 'Cape Town']
+print("\nOriginal order after sorted(reverse=True):")
+print(places_to_visit)  # ['Paris', 'Tokyo', 'New York', 'Sydney', 'Cape Town']
+print("\nReversed order:")  
+places_to_visit.reverse()
+print(places_to_visit)  # ['Cape Town', 'Sydney', 'New York', 'Tokyo', 'Paris']
+print("\nReversed back to original order:")
+places_to_visit.reverse()
+print(places_to_visit)  # ['Paris', 'Tokyo', 'New York', 'Sydney', 'Cape Town']
+print("\nSorted in alphabetical order:")
+places_to_visit.sort()
+print(places_to_visit)  # ['Cape Town', 'New York', 'Paris', 'Sydney', 'Tokyo']
+print("\nSorted in reverse alphabetical order:")
+places_to_visit.sort(reverse=True)
+print(places_to_visit)  # ['Tokyo', 'Sydney', 'Paris', 'New York', 'Cape Town']
+
+#People to invite to dinner
+print(len(friends_dinner_invite))  # 7 
