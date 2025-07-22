@@ -65,3 +65,25 @@ print(f'{guest_one_message}\n{guest_two_message}\n')
 del dinner_guest_list[0]
 del dinner_guest_list[0]
 print(dinner_guest_list)
+
+places_to_visit = ['zanzibar', 'rwanda', 'usa', 'liverpool', 'china']
+print(places_to_visit)
+
+print(sorted(places_to_visit))
+
+print(places_to_visit)
+
+print(sorted(places_to_visit, reverse=True))
+
+print(places_to_visit)
+
+places_to_visit.reverse()
+print(places_to_visit)
+
+places_to_visit.reverse()
+print(places_to_visit)
+
+places_to_visit.sort(reverse=True)
+print(places_to_visit)
+
+print(len(places_to_visit))

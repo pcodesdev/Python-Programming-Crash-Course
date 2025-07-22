@@ -92,3 +92,48 @@ expensive_motorcycle = 'kuga'
 motorcycles.remove(expensive_motorcycle)
 print(motorcycles)
 print(f"{expensive_motorcycle.title()} is a very expensive motorcycle with limited spareparts availability in the market.")
+
+# Organizing a List
+# Sorting a List Permanently with the sort() Method
+# Python’s sort() method makes it relatively easy to sort a list. Imagine we 
+# have a list of cars and want to change the order of the list to store them 
+# alphabetically. 
+cars = ['bmw', 'toyota', 'honda', 'mazda']
+cars.sort()
+print(cars)
+
+# The sort() method is permanent
+# You can also sort this list in reverse-alphabetical order by passing the 
+# argument reverse=True to the sort() method
+
+cars.sort(reverse=True)
+print(cars)
+
+# Sorting a List Temporarily with the sorted() Function
+print(sorted(cars))
+print(cars)
+
+# Printing a List in Reverse Order
+# To reverse the original order of a list, you can use the reverse() method.
+
+cars.reverse()
+print(cars)
+
+# The reverse() method changes the order of a list permanently, but you 
+# can revert to the original order anytime by applying reverse() to the same 
+# list a second time.
+
+# Finding the Length of a List
+# You can quickly find the length of a list by using the len() function. The list 
+# in this example has four items, so its length is 4:
+
+print(len(cars))
+
+# Avoiding Index Errors When Working with Lists
+print(cars[3])
+
+# An index error means Python can’t find an item at the index you 
+# requested.
+# Keep in mind that whenever you want to access the last item in a list, 
+# you should use the index -1
+print(cars[-1])
