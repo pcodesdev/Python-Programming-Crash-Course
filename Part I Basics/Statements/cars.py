@@ -64,3 +64,19 @@ print("\nFinished making your pizza!")
 # In summary, if you want only one block of code to run, use an if-elif-else chain. If more than one block of code needs to run, use a series of independent if statements
 
 # Using if Statements with Lists
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    print(f'Adding {requested_topping}.')
+    
+print("\nFinished making your pizza!")
+
+requested_toppings = []
+
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print("\nAdding {requested_topping}.")
+        
+    print("\nFinished making your pizza!")
+else:
+    print("Are you sure you want a plain pizza?")

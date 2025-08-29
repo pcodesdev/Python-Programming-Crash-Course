@@ -82,5 +82,35 @@ if 'apples' in favorite_fruits:
 print("\n")
     
 print("n\ere is your fruits salad!")
+
+usernames = ['tech', 'admin', 'custsupport', 'uhuru', 'pesh']
+current_users = ['pesh', 'emmah', 'mumbus', 'mwaosh', 'goat']
+# if usernames:
     
+#     for username in usernames:
+#         if username == "admin":
+#             print(f"Hello {username}, would you like to see a status report?")
+#         else:
+            
+#             print(f"Hello, {username} welcome to pematech website.")
     
+# else:
+#      print("We need to find some users!") 
+
+for username in usernames:
+    if username in current_users:
+        print(f"That {username} is available!")
+    else:
+        print(f"{username} is unique!")
+        
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for number in numbers:
+    if number == 1:
+        print("1st")
+    elif number == 2:
+        print("2nd")
+    elif number == 3:
+        print("3rd")
+    else:
+        print(f"{number}th")
