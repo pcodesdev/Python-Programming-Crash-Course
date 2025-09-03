@@ -31,3 +31,9 @@ print(f"New position: {alien_0['x_position']}")
 del alien_0['points']
 # Be aware that the deleted key-value pair is removed permanently.
 print(alien_0)
+
+# Using get() to Access Values
+# print(alien_0['points'])
+
+point_value = alien_0.get('points', 'No point value assigned.')
+print(point_value)
