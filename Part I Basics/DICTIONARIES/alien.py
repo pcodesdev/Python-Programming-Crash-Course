@@ -37,3 +37,51 @@ print(alien_0)
 
 point_value = alien_0.get('points', 'No point value assigned.')
 print(point_value)
+
+# Looping Through a Dictionary
+user_0 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi',
+}
+
+for key, value in user_0.items():
+    print(f"\nKey: {key}")
+    print(f"Value: {value}")
+
+# Looping Through All the Keys in a Dictionary
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phil': 'python',
+}
+
+friends = ['phil', 'sarah']
+
+for name in favorite_languages.keys():
+    print(f"Hi {name.title()}.")
+    
+    if name in friends:
+        language = favorite_languages[name].title()
+        print(f"\t{name.title()}, I see you love {language}!")
+
+if 'erin' not in favorite_languages.keys():
+    print("Erin, please take our poll!")
+    
+# Looping Through a Dictionary’s Keys in a Particular Order
+# Looping through a dictionary returns the items in the same order they 
+# were inserted. Sometimes, though, you’ll want to loop through a dictionary in a different order
+
+# Looping Through All Values in a Dictionary
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phil': 'python',
+}
+
+for value in set(favorite_languages.values()):
+    print(value.title())
+    
+# It’s easy to mistake sets for dictionaries because they’re both wrapped in braces. When you see braces but no key-value pairs, you’re probably looking at a set. Unlike lists and dictionaries, sets do not retain items in any specific order.

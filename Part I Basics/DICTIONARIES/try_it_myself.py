@@ -29,3 +29,55 @@ glossary = {
 
 for key, value in glossary.items():
     print(f"{key}: {value}.\n")
+    
+# PART II
+major_rivers = {
+    "Amazon": "Brazil",
+    "Nile": "Egypt", 
+    "Yangtze": "China"
+}
+
+for river, country in major_rivers.items():
+    print(f"\nThe {river.title()} runs through {country.title()}.")
+    
+for river in  major_rivers.keys():
+    print(river.title())
+    
+for country in major_rivers.values():
+    print(country.title())
+    
+favorite_languages = {
+    "Alice": "Python",
+    "Bob": "JavaScript", 
+    "Charlie": "Java",
+    "Diana": "C++",
+    "Emma": "Go",
+    "Frank": "Rust",
+    "Grace": "TypeScript",
+    "Henry": "Swift",
+}
+
+poll_participants = [
+    "Alice",      # Already in dictionary
+    "Bob",        # Already in dictionary
+    "Charlie",    # Already in dictionary
+    "Grace",      # Already in dictionary
+    "Jessica",    # Not in dictionary
+    "Mike",       # Not in dictionary
+    "Sarah",      # Not in dictionary
+    "David",      # Not in dictionary
+    "Lisa",       # Not in dictionary
+    "Kevin",      # Not in dictionary
+    "Emma",       # Already in dictionary
+    "Rachel",     # Not in dictionary
+    "Tom",        # Not in dictionary
+]
+
+for person in poll_participants:
+    print(f"\nHi {person}.")
+    if person in favorite_languages:
+        print(f"{person} thank you for participating in the poll.")
+        print(f"Your favorite language is {favorite_languages[person]}")
+        
+    else:
+        print(f"{person} kindly take the poll.")
